@@ -1,0 +1,20 @@
+html
+  body
+    title Dropzone simple example
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/fileupload.js')
+    script(src='/javascripts/bootstrap.js')
+    
+    label  Thumbanil Size: 
+    input#txtThumbSize(type='text', style='width: 100px', value='200')
+    |  px
+    hr
+    label  Select File To Create Thumbnail : 
+    div#imageContainer.fileupload
+    div
+      label.customUpload.btnUpload.btnM
+        span Photo
+        input.upload(type='file', name='image', onchange='thumb(this.files)')
+    hr
